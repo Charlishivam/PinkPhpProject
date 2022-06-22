@@ -1,0 +1,179 @@
+
+/*------------Start-responsive-here------------*/
+@media (max-width: 767px){
+    .details-box ul .item{
+        display: block;
+    }
+    .details-box ul .item .first-box{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .disconnect-btn{
+        margin-top: 15px;
+    }
+    .item-image{
+        height: auto;
+    }
+    .phone-box{
+        margin: 0px 9px;
+    }
+    .header-section .text-right {
+        margin-top: 8px;
+        text-align: center!important;
+    }
+    .menu-box .menu-list{
+        display: block;
+    }
+    .logo-box{
+        width: 150px;
+    }
+    .menu-box .menu-list .nav-item{
+        margin-bottom: 16px;
+    }
+    .fa.fa-bars{
+        color: #fff;
+    }
+     .header-section .common-flex{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .common-btn .btn{
+        margin-bottom: 10px;
+    }
+    .file-btn .drag {
+        display: block;
+    }
+    .file-btn .common-btn .Download{
+        margin-top: 10px;
+    }
+    .img-box img{
+        margin-bottom: 10px;
+    }
+    .dataTables_wrapper .common-d-flex{
+        display: block;
+    }
+    .dataTables_wrapper .common-d-flex .common-btn{
+        margin-top: 10px;
+    }
+    .file-btn .common-btn .Download,
+    .file-btn .common-btn .Upload{
+        width: 100%;
+    }
+    .menu-box .menu-list .nav-item a{
+        color: #f41365;
+    }
+    .menu-section {
+        min-height: 130px;
+    }
+    .banner-section{
+        margin-top: -50px;
+    }
+    .img-box .common-centent  h2{
+        font-size: 10px;
+        width: 110px;
+    }
+    .img-box .common-centent p{
+        width: 124px;
+        margin: 0px;
+        font-size: 7px;
+    }
+    .img-box .common-centent {
+        top: 12px;
+        right: 46px;
+    }
+    .img-box img{
+        height: 127px;
+        object-fit: cover;
+    }
+    .button .btn{
+        font-size: 8px;
+        padding: 3px 10px;
+    }
+    .contacts-list  {
+        margin-top: 90px!important;
+    }
+    
+    .login .login-content{
+        padding: 15px 15px;
+    }
+    .Pink-preview .preview-box{
+        padding: 50px 15px;
+    }
+    .logo-top-header .logo-img {
+        width: 134px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .header-section .text-right {
+        margin-top: 8px;
+        text-align: center!important;
+    }
+    .header-section .common-flex{
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    .facebook-box span p{
+        font-size: 12px;
+    }
+    .details-box ul .item .first-box{
+        width: 34%!important;
+    }
+    .img-box img{
+        height: 287px;
+        object-fit: cover;
+    }
+    .banner-section {
+        margin-top: -204px;
+    }
+    .img-box .common-centent  h2{
+        font-size: 20px;
+        width: 300px;
+    }
+    .img-box .common-centent p{
+        font-size: 14px;
+        width: 380px;
+    }
+    .img-box .common-centent {
+        right: 15px;
+    }
+    .owl-theme .owl-nav .owl-next {
+        right: 5px;
+    }
+    .owl-theme .owl-nav .owl-prev {
+        left: 3px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 720px){
+.close-btn .close::before {
+    transform: rotate(90deg);
+    }
+}
+
+
+
+@media screen and (max-width: 720px){
+    .close-btn .close::before, .close-btn .close::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 14px;
+    width: 2px;
+    height: 22px;
+    background-color: #222222;
+}
+
+
+
+
+
+
+
+
+
+/*------------Endt-responsive-here------------*/

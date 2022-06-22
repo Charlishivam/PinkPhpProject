@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /******************banner start**************/
+      .banner {
+        background-color: #4866ae;
+        padding: 3vh 0%;
+      }
+      .logo {
+        border-radius: 100%;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        margin: auto;
+      }
+      /********************nav banner start***************/
+      .nav_banner {
+        padding: 3vh 0%;
+        background-color: rgba(128, 128, 128, 0.24);
+      }
+      .nav_banner p {
+        font-weight: 600;
+      }
+      .nav_banner ul {
+        list-style-type: none;
+        text-align: center;
+      }
+      .nav_banner ul li {
+        display: inline;
+        margin-right: 5px;
+      }
+      .nav_banner ul li a i {
+        font-size: 20px;
+        padding: 13px;
+        background-color: #4866ae;
+        border: 2px solid #4866ae;
+        border-radius: 8px;
+        color: whitesmoke;
+      }
+      .nav_banner ul li a i:hover {
+        background-color: whitesmoke;
+        color: #4866ae;
+      }
+
+      /******************about_us start*****************/
+      .about_us {
+        padding: 3vh 0%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      /*******************gallery start***************/
+      .gallery_container {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      .gallery_container img {
+        margin-top: 60px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+          rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+          rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      }
+      /*************************form start************/
+      .padding_5vh_top {
+        padding: 5vh 0%;
+        background-color: rgba(211, 211, 211, 0.445);
+      }
+      .form_main_container p {
+        font: bold;
+        font-weight: 600;
+      }
+      .form_main_container input {
+        width: 100%;
+        height: 45px;
+        padding-left: 1%;
+        border: none;
+        border-radius: 5px;
+      }
+      .form_main_container textarea {
+        width: 100%;
+        padding: 1% 0% 0% 1%;
+        font: bold;
+        border-radius: 2px;
+      }
+      .form_main_container #submit_button {
+        width: auto;
+        background-color: #4866ae;
+        color: whitesmoke;
+        font-weight: 600;
+        padding: 0% 2%;
+        border: 2px solid #4866ae;
+      }
+      .form_main_container #submit_button:hover {
+        background-color: whitesmoke;
+        color: royalblue;
+      }
+      #occupation_styling {
+        width: 100%;
+      }
+
+      /**************playstore app download************/
+      .playstore {
+        border-radius: 20px;
+        height: 100px;
+        width: 300px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .app_download {
+        padding: 3vh 0%;
+      }
+      .app_download h3 {
+        font-weight: 700;
+      }
+      /*****************footer strat************/
+      .footer {
+        padding-top: 3vh;
+        background-color: #4866ae;
+      }
+      .footer_container {
+        min-height: 15vh;
+      }
+      #footer_heading {
+        padding-bottom: 3vh;
+      } /************media query start***********/
+
+      @media (max-width: 992px) {
+        .flexing_images img {
+          width: 48%;
+        }
+        .about_company_navigation ul {
+          width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+        .flexing_images img {
+          width: 98%;
+        }
+        .about_company_navigation a {
+          font-size: 14px;
+        }
+        .company_navigation ul {
+          justify-content: left;
+        }
+        .company_navigation ul li {
+          margin-right: 15px;
+        }
+        .company_navigation img {
+          width: 30px;
+          height: 30px;
+        }
+        .app_download h3 {
+          padding-top: 3%;
+        }
+      }
+      @media (max-width: 414px) {
+        .nav_banner ul li a i {
+          padding: 5px;
+        }
+        .company_navigation ul {
+          width: 200px;
+        }
+        .nav_banner ul li {
+          margin-right: 0px;
+        }
+        .about_company_navigation ul li a i {
+          margin-top: 10px;
+        }
+      }
+      @media (max-width: 412px) {
+        .footer_container h5 {
+          font-size: 16px;
+        }
+        #footer_heading {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 375px) {
+        #hidden_li {
+          display: none;
+        }
+        #hiddeling_link {
+          display: none;
+        }
+      }
+      /***********loading_div_end********/
+      /* Center the loader */
+      #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        margin: -76px 0 0 -76px;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Add animation to "page content" */
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+      }
+
+      @-webkit-keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      #myDiv {
+        display: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+    <!---------------loader end-->
+    <section class="container-fluid">
+      <section class="row banner text-white text-center">
+        <section class="col">
+          <section class="logo bg-dark">
+            <img src="images/logo.jpg" height="100%" width="100%" alt="" />
+          </section>
+          <h2>Beema Bazaar Online</h2>
+          <h4>Financial Planner</h4>
+        </section>
+      </section>
+    </section>
+    <!---------------------nav banner start-->
+    <section class="container-fluid">
+      <section class="row nav_banner text-center">
+        <section class="col">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-phone-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li id="hiddeling_link">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+          <p>Lic Of India Jeevan Pragti Bldg Laxmi Nagar Delhi</p>
+        </section>
+      </section>
+    </section>
+    <!----------------------about us start-->
+    <section class="container my-4">
+      <section class="row about_us">
+        <section class="col">
+          <h2>About us</h2>
+          <hr />
+          <p>
+            Beema Bazaar Online is related to life Ins. , Vehicle Ins. and
+            Health insurance. Insurance is a means of protection from financial
+            loss. It is used to hedge against the risk of accidental or
+            uncertain losses. Human life is the most valuable asset on earth, so
+            Invest Today For Better Tomorrow. Join Our Team We are always
+            looking for dedicated individuals to join our broad team of Beema
+            bazaar staff If you have any questions or would like more
+            information, our advisors will be happy to help.
+          </p>
+        </section>
+      </section>
+    </section>
+    <!--------------------gallery_strat-->
+    <section class="container">
+      <h2>Gallery</h2>
+      <hr />
+      <section class="row gallery_container">
+        <section class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <img src="images/1.jpg" width="100%" alt="" /><img
+            src="images/4.jpg"
+            width="100%"
+            alt=""
+          /><img src="images/7.jpg" width="100%" alt="" /><img
+            src="images/10.jpg"
+            width="100%"
+            alt=""
+          />
+        </section>
+
+        <section class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <img src="images/2.jpg" width="100%" alt="" /><img
+            src="images/5.jpg"
+            width="100%"
+            alt=""
+          /><img src="images/8.jpg" width="100%" alt="" />
+        </section>
+
+        <section class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <img src="images/3.jpg" width="100%" alt="" /><img
+            src="images/6.jpg"
+            width="100%"
+            alt=""
+          /><img src="images/9.jpg" width="100%" alt="" />
+        </section>
+      </section>
+    </section>
+    <!--------------------------contact form start-->
+    <section class="container-fluid my-4">
+      <section class="row padding_5vh_top">
+        <section class="col">
+          <section class="container">
+            <section class="row form_main_container">
+              <section class="col">
+                <h2>Contact Form</h2>
+                <hr />
+                <form action="" method="POST">
+                  <p>Name</p>
+                  <p>
+                    <input
+                      type="text"
+                      name="fname"
+                      placeholder="Enter Your Name"
+                      id=""
+                    />
+                  </p>
+                  <p>Date Of Birth</p>
+                  <p><input type="date" name="date" id="" /></p>
+                  <p>Mobile Number</p>
+                  <p>
+                    <input
+                      type="number"
+                      name="mobile"
+                      placeholder="Enter Your Mobile Number"
+                      id=""
+                    />
+                  </p>
+                  <!----------------->
+                  <p>Occupation</p>
+                  <select class="custom-select" name="occp" id="occp">
+                    <option hidden="">Occupation</option>
+                    <option value="0">Accountant</option>
+                    <option value="1">Administrative</option>
+                    <option value="2">Advertising</option>
+                    <option value="3">Agriculture/Farming</option>
+                    <option value="4">Air Hostess</option>
+                    <option value="5">Airline Employee</option>
+                    <option value="6">Architect</option>
+                    <option value="7">Banking Services</option>
+                    <option value="8">
+                      Beauty,Health and Fitness Professional
+                    </option>
+                    <option value="9">Business</option>
+                    <option value="10">Chartered Accountant</option>
+                    <option value="11">Civil Engineer</option>
+                    <option value="12">
+                      Civil Services (IAS/IFS/IPS/IRS/etc.)
+                    </option>
+                    <option value="13">Clerical</option>
+                    <option value="14">Commercial Pilot</option>
+                    <option value="15">Company Secretary</option>
+                    <option value="16">Computer Engineer</option>
+                    <option value="17">Consultant</option>
+                    <option value="18">Cost Accountant</option>
+                    <option value="19">Defence Services</option>
+                    <option value="20">Doctor</option>
+                    <option value="21">Engineer</option>
+                    <option value="22">Event Management</option>
+                    <option value="23">Executive</option>
+                    <option value="24">Fashion Designer</option>
+                    <option value="25">Finance</option>
+                    <option value="26">Govt. Service</option>
+                    <option value="27">
+                      Hotel and Restaurant Professional
+                    </option>
+                    <option value="28">Industrialist</option>
+                    <option value="29">Insurance</option>
+                    <option value="30">Interior Designer</option>
+                    <option value="31">IT/Telecommunications</option>
+                    <option value="32">Lawyer</option>
+                    <option value="33">Liaison</option>
+                    <option value="34">Management</option>
+                    <option value="35">Mechanical Engineer</option>
+                    <option value="36">Media</option>
+                    <option value="37">Medical Assistant</option>
+                    <option value="38">Medical Profession</option>
+                    <option value="39">Medical Transcription</option>
+                    <option value="40">Merchant Navy</option>
+                    <option value="41">Non-Employed</option>
+                    <option value="42">Nurse</option>
+                    <option value="43">Pharmacist</option>
+                    <option value="44">Physiotherapist</option>
+                    <option value="45">Private Service</option>
+                    <option value="46">Professor</option>
+                    <option value="47">Project Engineer</option>
+                    <option value="48">Public Relations</option>
+                    <option value="49">Real Estate</option>
+                    <option value="50">Research Scholar/PhD</option>
+                    <option value="51">Retired</option>
+                    <option value="52">Sales/Marketing</option>
+                    <option value="53">Scientist</option>
+                    <option value="54">Self Employed</option>
+                    <option value="55">Social Services</option>
+                    <option value="56">Software Professional</option>
+                    <option value="57">Stock Broker</option>
+                    <option value="58">Student</option>
+                    <option value="59">Teacher</option>
+                    <option value="60">Technician</option>
+                    <option value="61">Travel and Tourism Professional</option>
+                    <option value="62">Writer/Author</option>
+                    <option value="63">Others</option>
+                  </select>
+                  <!-------------->
+                  <br /><b><br /></b>
+                  <p>Message</p>
+                  <p>
+                    <textarea
+                      name="msg"
+                      placeholder="Enter Your Message"
+                      id=""
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </p>
+                  <p>
+                    <input type="submit" id="submit_button" value="Submit" />
+                  </p>
+                </form>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-----------------download app container start-->
+    <section class="container my-3">
+      <section class="row text-black">
+        <section class="col"></section>
+        <section class="col-xl-6 col-lg-7 col-md-8 col-sm-12 my-auto">
+          <section class="playstore">
+            <img src="images/playstore.jpg" width="100%" height="100%" alt="" />
+          </section>
+          <br />
+          <h3>अपना प्रोफाइल बनाने के लिए डाउनलोड करें हमारी ऐप</h3>
+        </section>
+      </section>
+    </section>
+    <!----------------------footer start-->
+    <section class="container-fluid footer text-white text-center">
+      <section class="row footer_container">
+        <section class="col my-auto">
+          <h5>Visited User : 1076</h5>
+        </section>
+        <section class="col my-auto"><h5>Satisfied Client : 7700</h5></section>
+      </section>
+      <h6 id="footer_heading">
+        Copyright © 2020 | All rights reserved | By Perfect Soft Solution Pvt.
+        Ltd.
+      </h6>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
